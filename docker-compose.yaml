@@ -1,0 +1,8 @@
+version: '3.3'
+services:
+  accountservice:
+    restart: on-failure
+    build: .
+    container_name: accountservice
+    ports:
+      - "8080:8080"
