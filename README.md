@@ -1,6 +1,8 @@
 # AccountService
+SpringBoot microservice developed in Kotlin and runs on Docker.
 
-Implementation:
+# Implementation:
+
      Transactional Nature: 
        * The function handling the fund transfer is
        * Annotated with @Transactional annotation
@@ -17,7 +19,6 @@ Have added the postman collection as well to the repo.
 
 How to Run:
 Clone the project and run the below command to run this application in a docker container
-
 docker-compose up -d 
 
 Application Details:
