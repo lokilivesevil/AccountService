@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "7ff6de47-d0ba-433b-afd0-b68e4c97cba0",
+		"name": "AccountServiceCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateAccount1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountHolderName\": \"Nishant Kumar\",\n    \"mobileNumber\": \"971526112804\",\n    \"balance\": 12323\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateAccount2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"accountHolderName\": \"Lokesh Jain\",\n    \"mobileNumber\": \"971526112804\",\n    \"balance\": 0\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/accounts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchAccountDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/accounts/17e3f75c-65b8-44c5-9f77-43c293259421",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"accounts",
+						"17e3f75c-65b8-44c5-9f77-43c293259421"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FundTransferRequest",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"toAccount\": \"17e3f75c-65b8-44c5-9f77-43c293259421\",\n    \"fromAccount\": \"0e47b874-e661-4dca-8c95-c70adb3c3378\",\n    \"remarks\": \"Initial Transfer\",\n    \"amount\": 8\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/transactions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchTransactionDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/transactions/f66e3dd2-97d5-47e3-b1e8-c41446605293",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"transactions",
+						"f66e3dd2-97d5-47e3-b1e8-c41446605293"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
