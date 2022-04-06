@@ -19,3 +19,9 @@ How to Run:
 Clone the project and run the below command to run this application in a docker container
 
 docker-compose up -d 
+
+Application Details:
+Maven: 3.8.5
+SpringBoot: 2.6.6
+Kotlin
+OpenJDK11
